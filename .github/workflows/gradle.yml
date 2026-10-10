@@ -2,6 +2,10 @@ name: Build MCNative 1.0-SNAPSHOT
 on:
   workflow_dispatch:
 
+# Добавляем блок permissions для всего воркфлоу
+permissions:
+  contents: write
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
